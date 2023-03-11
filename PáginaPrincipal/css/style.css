@@ -11,9 +11,9 @@
     margin: 0 auto;
 }
 
-/* body {
-    background-color: black;
-} */
+ body {
+    color: white;
+} 
 
 header {
     background-color: cyan;
@@ -52,15 +52,34 @@ header nav a:hover {
 }
 
 main .banner{
-        background-image: url("../../assets/img/videogame.jpg");
+    background-image: url("../../assets/img/GameImg.png"); /* Imagem de fundo/Banner */
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
-    height: 1400px;
+    width: 100%; /* Largura da imagem */
+    height: 1400px; /* Altura da imagem */
+    display: flex; /* Centraliza o glass */
+    justify-content: center;
 }
 
-main .banner h1 {
+main .banner .glass {
+    display: flex; /* centraliza o conteudo */
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, black, white);
+    border-radius: 10px;
+    filter: opacity(90%);
+    width: 1000px; /* largura do glass */
+    height: 500px; /* Altura do glass */
+    margin-top: 50px; /* Margin para o glass */
+    border: white 1px solid;
+}
+
+main .banner .glass h1 {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform: uppercase;
     color: white;
+    font-size: 95px;
+    text-shadow: 1px 1px 10px cyan;
+    filter: i;
 }
+
