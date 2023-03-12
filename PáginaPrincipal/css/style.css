@@ -58,16 +58,19 @@ main .banner{
     width: 100%; /* Largura da imagem */
     height: 1400px; /* Altura da imagem */
     display: flex; /* Centraliza o glass */
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 main .banner .glass {
     display: flex; /* centraliza o conteudo */
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(to right, black, white);
+    flex-direction: column;
+    background-image: linear-gradient(to right, black, rgb(132, 0, 184), white);
     border-radius: 10px;
     filter: opacity(90%);
+    backdrop-filter: blur(100px);
     width: 1000px; /* largura do glass */
     height: 500px; /* Altura do glass */
     margin-top: 50px; /* Margin para o glass */
@@ -80,6 +83,6 @@ main .banner .glass h1 {
     color: white;
     font-size: 95px;
     text-shadow: 1px 1px 10px cyan;
-    filter: i;
+    
 }
 
